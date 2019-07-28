@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.com/calvinbui/ansible-nextcloud-docker.svg?branch=master)](https://travis-ci.com/calvinbui/ansible-nextcloud-docker)
 ![GitHub release](https://img.shields.io/github/release/calvinbui/ansible-nextcloud-docker.svg)
-![Ansible Quality Score](https://img.shields.io/ansible/quality/40535.svg)
-![Ansible Role](https://img.shields.io/ansible/role/d/40535.svg)
+![Ansible Quality Score](https://img.shields.io/ansible/quality/42341.svg)
+![Ansible Role](https://img.shields.io/ansible/role/d/42341.svg)
 
 # Ansible NextCloud Docker
 
