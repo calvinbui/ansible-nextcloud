@@ -25,12 +25,13 @@ N/A
 
 `nextcloud_docker_additional_options`: [Additional parameters](https://docs.ansible.com/ansible/latest/modules/docker_container_module.html) to add to docker container
 
-`nextcloud_build_image`: Where to build a docker image or pull from source. True or False.
-
-`nextcloud_build_folder`: Template packaged with this role is meant to be very generic and serve a variety of use cases. However, many people would like to have a much more customized version, and so you can override this role's default template with your own, adding any additional customizations you need. To do this:
+`nextcloud_build`: Template packaged with this role is meant to be very generic and serve a variety of use cases. However, many people would like to have a much more customized version, and so you can override this role's default template with your own, adding any additional customizations you need. To do this:
 - Create a `files` directory at the same level as your playbook.
 - Create a folder inside `files` containing all the files for your Docker build (just choose a different name from the default template).
-- Set the variable like: `nextcloud_build_folder: my-nextcloud-build` (with the name of your folder).
+- Set the variable like: `nextcloud_build: my-nextcloud-build` (with the name of your folder).
+
+Otherwise leave it empty (`""`) to not build
+
 
 ## Dependencies
 

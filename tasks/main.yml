@@ -11,16 +11,16 @@
 
 - name: Copy Dockerfile folder
   copy:
-    src: "{{ nextcloud_build_folder }}"
+    src: "{{ nextcloud_build }}"
     dest: "{{ nextcloud_directory }}/build"
 
 - name: Build NextCloud Image
   docker_image:
     name: "{{ nextcloud_image }}"
     build:
-      path: "{{ nextcloud_directory }}/build/{{ nextcloud_build_folder }}"
+      path: "{{ nextcloud_directory }}/build/{{ nextcloud_build }}"
     source: build
-  when: nextcloud_build_image
+  when: nextcloud_build != ""
 
 - name: Set Docker container parameters
   set_fact:

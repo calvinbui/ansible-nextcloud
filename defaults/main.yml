@@ -12,5 +12,4 @@ nextcloud_environment_variables:
 nextcloud_docker_additional_options:
   restart_policy: unless-stopped
 
-nextcloud_build_image: true
-nextcloud_build_folder: "full-with-libreoffice"
+nextcloud_build: "full-with-libreoffice"
