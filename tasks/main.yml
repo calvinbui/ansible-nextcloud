@@ -36,9 +36,3 @@
 - name: Create NextCloud container
   docker_container: "{{ nextcloud_container_parameters | combine(nextcloud_docker_additional_options) }}"
   register: nextcloud_container
-
-- name: Wait for NextCloud start
-  wait_for:
-    port: "{{ nextcloud_ports[0].split(':')[1] }}"
-    host: "{{ nextcloud_container.container.NetworkSettings.IPAddress }}"
-    timeout: 300
