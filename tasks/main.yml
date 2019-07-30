@@ -39,6 +39,6 @@
 
 - name: Wait for NextCloud start
   wait_for:
-    port: "{{ nextcloud_ports[0].split(':')[0] }}"
+    port: "{{ nextcloud_ports[0].split(':')[1] }}"
     host: "{{ nextcloud_container.container.NetworkSettings.IPAddress }}"
-    timeout: 600
+    timeout: 300
