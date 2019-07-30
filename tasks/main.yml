@@ -41,3 +41,4 @@
   wait_for:
     port: "{{ nextcloud_ports[0].split(':')[0] }}"
     host: "{{ nextcloud_container.container.NetworkSettings.IPAddress }}"
+    timeout: 600
