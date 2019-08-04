@@ -19,19 +19,11 @@ N/A
 
 `nextcloud_ports`: List of ports to expose
 
-`nextcloud_directory`: Directory to store configuration files
+`nextcloud_volumes`: Volumes to mount
 
 `nextcloud_environment_variables`: Docker environmental variables
 
 `nextcloud_docker_additional_options`: [Additional parameters](https://docs.ansible.com/ansible/latest/modules/docker_container_module.html) to add to docker container
-
-`nextcloud_build`: Template packaged with this role is meant to be very generic and serve a variety of use cases. However, many people would like to have a much more customized version, and so you can override this role's default template with your own, adding any additional customizations you need. To do this:
-- Create a `files` directory at the same level as your playbook.
-- Create a folder inside `files` containing all the files for your Docker build (just choose a different name from the default template).
-- Set the variable like: `nextcloud_build: my-nextcloud-build` (with the name of your folder).
-
-Otherwise leave it empty (`""`) to not build
-
 
 ## Dependencies
 

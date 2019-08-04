@@ -4,12 +4,11 @@ nextcloud_name: nextcloud
 nextcloud_image: nextcloud:16
 nextcloud_ports:
   - 80:80
-nextcloud_directory: /tmp/nextcloud
+nextcloud_volumes:
+  /tmp/nextcloud:/var/www/html
 nextcloud_environment_variables:
   NEXTCLOUD_ADMIN_USER: "admin"
   NEXTCLOUD_ADMIN_PASSWORD: "admin"
 
 nextcloud_docker_additional_options:
   restart_policy: unless-stopped
-
-nextcloud_build: "full-with-libreoffice"
