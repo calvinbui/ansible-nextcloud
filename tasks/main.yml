@@ -19,7 +19,9 @@
     name: "{{ nextcloud_image }}"
     build:
       path: "{{ nextcloud_directory }}/build/{{ nextcloud_build_folder }}"
+      pull: true
     source: build
+    state: present
   when: nextcloud_build_image
 
 - name: Set Docker container parameters
